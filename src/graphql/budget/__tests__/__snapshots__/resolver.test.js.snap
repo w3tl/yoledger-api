@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`budget resolver Mutation upsertBudget 1`] = `
+Object {
+  "budget": Object {
+    "_id": "2",
+    "account": Object {
+      "name": "Food",
+      "type": "EXPENSE",
+    },
+    "amount": 55,
+    "date": 2018-05-10T00:00:00.000Z,
+  },
+  "success": "2",
+}
+`;
+
+exports[`budget resolver Query budget.account should return an account 1`] = `Array []`;
+
+exports[`budget resolver Query bugdets should return accounts 1`] = `
+Object {
+  "accounts": Array [
+    Object {
+      "_id": "3",
+      "name": "Food",
+      "type": "EXPENSE",
+    },
+    Object {
+      "_id": "4",
+      "name": "Train",
+      "type": "EXPENSE",
+    },
+  ],
+}
+`;

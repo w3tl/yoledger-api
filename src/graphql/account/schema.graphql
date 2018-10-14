@@ -1,0 +1,32 @@
+extend type Query {
+  accounts(type: AccountType!): [Account]
+  account(id: ID!): Account
+}
+
+extend type Mutation {
+  addAccount(input: AddAccountInput!): AddAccountPayload
+}
+
+type Account {
+  id: ID!
+  name: String!
+  balance: Float
+  type: AccountType!
+}
+
+enum AccountType {
+  ASSET
+  EXPENSE
+  INCOME
+  VENDOR
+}
+
+input AddAccountInput {
+  name: String!
+  balance: Float
+  type: AccountType!
+}
+
+type AddAccountPayload {
+  account: Account
+}

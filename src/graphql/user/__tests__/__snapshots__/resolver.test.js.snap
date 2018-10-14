@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user resolver Mutation changePassword should return token when when password was changed 1`] = `
+Object {
+  "token": "{\\"userId\\":\\"admin\\"};secret;{\\"expiresIn\\":10}",
+}
+`;
+
+exports[`user resolver Mutation signin should return token for correct credentials 1`] = `
+Object {
+  "token": "{\\"userId\\":\\"admin\\"};secret;{\\"expiresIn\\":10}",
+}
+`;
+
+exports[`user resolver Query 1`] = `
+Object {
+  "_id": "admin",
+  "credentials": Object {
+    "current": Object {
+      "algorithm": "dev",
+      "hash": "123password",
+      "salt": "123",
+      "valid": true,
+    },
+    "store": Array [
+      Object {
+        "algorithm": "dev",
+        "hash": "123passwordOld",
+        "salt": "123",
+        "valid": true,
+      },
+    ],
+  },
+}
+`;

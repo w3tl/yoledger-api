@@ -1,0 +1,6 @@
+{
+  "credentials": {
+    "algorithm": "argon2"
+  },
+  "port": "3030"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bank card",
+    "type": "ASSET",
+    "balance": 1500.5
+  },
+  {
+    "name": "Cash",
+    "type": "ASSET",
+    "balance": 143
+  },
+  {
+    "name": "Train",
+    "type": "EXPENSE"
+  },
+  {
+    "name": "Food",
+    "type": "EXPENSE"
+  }
+]

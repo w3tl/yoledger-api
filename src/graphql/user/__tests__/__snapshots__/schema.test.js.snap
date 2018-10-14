@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user schema should be return user by context: admin 1`] = `
+Object {
+  "user": Object {
+    "username": "admin",
+  },
+}
+`;

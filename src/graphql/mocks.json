@@ -1,0 +1,130 @@
+{
+  "users": [{
+    "_id": "admin",
+    "credentials": {
+      "current": {
+        "algorithm": "dev",
+        "valid": true,
+        "salt": "123",
+        "hash": "123password"
+      },
+      "store": [{
+        "algorithm": "dev",
+        "valid": true,
+        "salt": "123",
+        "hash": "123passwordOld"
+      }]
+    }
+  }, {
+    "_id": "user1",
+    "credentials": {
+      "current": {
+        "algorithm": "dev",
+        "valid": true,
+        "salt": "123",
+        "hash": "123password"
+      },
+      "store": [{
+        "algorithm": "dev",
+        "valid": true,
+        "salt": "123",
+        "hash": "123passwordUsed"
+      }]
+    }
+  }],
+  "transactions": [
+    {
+      "_id": "1",
+      "amount": 100.5,
+      "createdAt": "2018-06-20T00:00:00.000Z",
+      "destination": {
+        "name": "Food"
+      },
+      "source": {
+        "name": "Bank card"
+      }
+    },
+    {
+      "_id": "2",
+      "amount": 13,
+      "createdAt": "2018-06-21T00:00:00.000Z",
+      "destination": {
+        "name": "Food"
+      },
+      "source": {
+        "name": "Bank card"
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "_id": "1",
+      "balance": 1500.5,
+      "name": "Bank card",
+      "type": "ASSET"
+    },
+    {
+      "_id": "2",
+      "balance": 143,
+      "name": "Cash",
+      "type": "ASSET"
+    },
+    {
+      "_id": "3",
+      "name": "Food",
+      "type": "EXPENSE"
+    },
+    {
+      "_id": "4",
+      "name": "Train",
+      "type": "EXPENSE"
+    }
+  ],
+  "budgets": [
+    {
+      "_id": "1",
+      "account": {
+        "name": "Food",
+        "type": "EXPENSE"
+      },
+      "date": "2018-05-21T00:00:00.000Z",
+      "amount": 50
+    },
+    {
+      "_id": "2",
+      "account": {
+        "name": "Food",
+        "type": "EXPENSE"
+      },
+      "date": "2018-05-10T00:00:00.000Z",
+      "amount": 55
+    },
+    {
+      "_id": "3",
+      "account": {
+        "name": "Food",
+        "type": "EXPENSE"
+      },
+      "date": "2018-06-21T00:00:00.000Z",
+      "amount": 40
+    },
+    {
+      "_id": "4",
+      "account": {
+        "name": "Food",
+        "type": "EXPENSE"
+      },
+      "date": "2018-06-10T00:00:00.000Z",
+      "amount": 60
+    },
+    {
+      "_id": "5",
+      "account": {
+        "name": "Train",
+        "type": "EXPENSE"
+      },
+      "date": "2018-06-10T00:00:00.000Z",
+      "amount": 14
+    }
+  ]
+}

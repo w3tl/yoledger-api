@@ -1,0 +1,61 @@
+{
+  "name": "yoledger-api",
+  "version": "0.1.0",
+  "description": "Yo ledger API",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d ./build --ignore \"**/coverage/*.js,src/**/*.spec.js,src/**/*.test.js\"",
+    "clean": "rm -rf build && mkdir build",
+    "start": "NODE_ENV=production node ./build/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "test:model": "jest --projects src/model --forceExit",
+    "test:model-lh": "NODE_ENV=test jest --projects src/model --config src/model/jest.rs.config.js",
+    "test:gql": "NODE_ENV=test jest --projects src/graphql"
+  },
+  "author": "Vitaly Dostovalov",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "apollo-server-core": "^2.1.0",
+    "apollo-server-express": "^2.0.6",
+    "argon2": "^0.19.3",
+    "babel-plugin-inline-import": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "convict": "^4.3.2",
+    "dataloader": "^1.4.0",
+    "express": "^4.16.3",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.1.4",
+    "mongodb-topology-manager": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "jest-environment-node": "^23.4.0",
+    "nodemon": "^1.18.4"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.test.js",
+      "globalConfig.json"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base"
+  }
+}

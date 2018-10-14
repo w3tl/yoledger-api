@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`budget upsertBudget should add a budget to the existing period: should contain "twix" account with amount of 15 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "account": Object {
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  "amount": 15,
+  "balance": 0,
+  "date": 2018-05-25T00:00:00.000Z,
+  "userId": "admin",
+}
+`;
+
+exports[`budget upsertBudget should create a non-existent period with a budget: should contain "twix" account with amount of 15 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "account": Object {
+    "name": "Train",
+    "type": "EXPENSE",
+  },
+  "amount": 15,
+  "date": 2018-01-13T00:00:00.000Z,
+  "userId": "admin",
+}
+`;
+
+exports[`budget upsertBudget should update the amount in the existing period: should contain "[object Object]" account with amount of 14 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "account": Object {
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  "amount": 14,
+  "balance": 0,
+  "date": 2018-05-25T00:00:00.000Z,
+  "userId": "admin",
+}
+`;

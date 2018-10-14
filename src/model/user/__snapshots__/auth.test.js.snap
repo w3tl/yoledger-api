@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`auth createCredentials 1`] = `
+Object {
+  "algorithm": "dev",
+  "createdAt": 2018-06-20T00:00:00.000Z,
+  "hash": "12345678password",
+  "salt": "12345678",
+  "valid": true,
+}
+`;

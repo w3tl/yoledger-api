@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transaction schema Should be return transactions between two dates: Transactions between 2018-06-20 and 2018-06-23 1`] = `
+Object {
+  "transactions": Array [
+    Object {
+      "amount": 100.5,
+      "date": "2018-06-20T00:00:00.000Z",
+      "destination": Object {
+        "name": "Food",
+      },
+      "id": "1",
+      "source": Object {
+        "name": "Bank card",
+      },
+    },
+    Object {
+      "amount": 13,
+      "date": "2018-06-21T00:00:00.000Z",
+      "destination": Object {
+        "name": "Food",
+      },
+      "id": "2",
+      "source": Object {
+        "name": "Bank card",
+      },
+    },
+  ],
+}
+`;
+
+exports[`transaction schema should be return transaction with source and destination: Transactions with source and destination accounts 1`] = `
+Object {
+  "transactions": Array [
+    Object {
+      "amount": 100.5,
+      "date": "2018-06-20T00:00:00.000Z",
+      "destination": Object {
+        "balance": null,
+        "name": "Food",
+      },
+      "id": "1",
+      "source": Object {
+        "balance": 1500.5,
+        "name": "Bank card",
+      },
+    },
+  ],
+}
+`;

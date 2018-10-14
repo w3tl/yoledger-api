@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user changePassword should return true when password are new and update cred's store 1`] = `
+Object {
+  "_id": "dumb2",
+  "createdAt": 2018-06-20T00:00:00.000Z,
+  "credentials": Object {
+    "current": Object {
+      "algorithm": "very strong algorithm",
+      "createdAt": 2018-06-20T00:00:00.000Z,
+      "hash": "crypto hash",
+      "salt": "random last",
+      "valid": true,
+    },
+    "store": Array [
+      Object {
+        "algorithm": "very strong algorithm",
+        "createdAt": 2018-06-20T00:00:00.000Z,
+        "hash": "old crypto hash",
+        "salt": "random salt",
+        "valid": true,
+      },
+      Object {
+        "algorithm": "very strong algorithm",
+        "createdAt": 2018-06-20T00:00:00.000Z,
+        "hash": "hash to archive",
+        "salt": "random salt",
+        "valid": true,
+      },
+    ],
+  },
+  "userId": "dumb2",
+}
+`;
+
+exports[`user create new user 1`] = `
+Object {
+  "_id": "admin",
+  "createdAt": 2018-06-20T00:00:00.000Z,
+  "credentials": Object {
+    "current": Object {
+      "algorithm": "very strong algorithm",
+      "createdAt": 2018-06-20T00:00:00.000Z,
+      "hash": "crypto hash",
+      "salt": "random last",
+      "valid": true,
+    },
+    "store": Array [],
+  },
+  "userId": "admin",
+}
+`;

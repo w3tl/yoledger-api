@@ -1,0 +1,10 @@
+{
+  "mongoUri": "mongodb://localhost:31000/?replicaSet=rs",
+  "credentials": {
+    "algorithm": "dev"
+  },
+  "token": {
+    "secret": "jwtsecret",
+    "expiresIn": 5
+  }
+}

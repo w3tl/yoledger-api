@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transaction resolver Mutation addTransaction 1`] = `
+Object {
+  "_id": "50",
+  "amount": 564,
+  "createdAt": "2018-05-13",
+  "destination": Object {
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  "source": Object {
+    "name": "Bank card",
+    "type": "ASSET",
+  },
+  "userId": "admin",
+}
+`;
+
+exports[`transaction resolver Mutation updateTransaction 1`] = `
+Object {
+  "_id": "50",
+  "amount": 564,
+  "createdAt": "2018-05-13",
+  "destination": Object {
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  "source": Object {
+    "name": "Bank card",
+    "type": "ASSET",
+  },
+  "userId": "admin",
+}
+`;
+
+exports[`transaction resolver Query 1`] = `
+Array [
+  Object {
+    "_id": "1",
+    "amount": 100.5,
+    "createdAt": 2018-06-20T00:00:00.000Z,
+    "destination": Object {
+      "name": "Food",
+    },
+    "source": Object {
+      "name": "Bank card",
+    },
+  },
+]
+`;
+
+exports[`transaction resolver Transaction: destination dataloader call 1`] = `
+Array [
+  Object {
+    "name": "expense",
+    "userId": "admin",
+  },
+]
+`;
+
+exports[`transaction resolver Transaction: source dataloader call 1`] = `
+Array [
+  Object {
+    "name": "asset",
+    "userId": "admin",
+  },
+]
+`;
