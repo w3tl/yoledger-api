@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`account schema Should be return accounts: query ASSET accounts 1`] = `
+Array [
+  Object {
+    "balance": 1500.5,
+    "name": "Bank card",
+  },
+  Object {
+    "balance": 143,
+    "name": "Cash",
+  },
+]
+`;

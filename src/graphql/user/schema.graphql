@@ -1,0 +1,25 @@
+extend type Query {
+  user: User
+}
+
+extend type Mutation {
+  signin(login: String!, password: String!): SignupPayload!
+  signout(token: String): SignoutPayload!
+  changePassword(oldPassword: String!, newPassword: String!): ChangePasswordPayload!
+}
+
+type User {
+  username: String
+}
+
+type SignupPayload {
+  token: String!
+}
+
+type SignoutPayload {
+  success: Boolean
+}
+
+type ChangePasswordPayload {
+  token: String
+}

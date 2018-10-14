@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataloaders accountByName: Load Food and Train for admin 1`] = `
+Array [
+  Object {
+    "_id": "3",
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  Object {
+    "_id": "4",
+    "name": "Train",
+    "type": "EXPENSE",
+  },
+]
+`;
+
+exports[`dataloaders accountByName: Load Food for admin 1`] = `
+Object {
+  "_id": "3",
+  "name": "Food",
+  "type": "EXPENSE",
+}
+`;

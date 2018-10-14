@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transaction post should create transaction and update the balance of accounts: Destination account 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "balance": 100.5,
+  "name": "Food",
+  "type": "EXPENSE",
+  "userId": "user1",
+}
+`;
+
+exports[`transaction post should create transaction and update the balance of accounts: Source account 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "balance": 1400,
+  "name": "Bank card",
+  "type": "ASSET",
+  "userId": "user1",
+}
+`;
+
+exports[`transaction post should create transaction and update the balance of accounts: Transaction 1`] = `
+Object {
+  "_id": Any<ObjectID>,
+  "amount": 100.5,
+  "createdAt": Any<Date>,
+  "destination": Object {
+    "name": "Food",
+    "type": "EXPENSE",
+  },
+  "source": Object {
+    "name": "Bank card",
+    "type": "ASSET",
+  },
+  "userId": "user1",
+}
+`;

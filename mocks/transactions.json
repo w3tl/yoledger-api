@@ -1,0 +1,20 @@
+[
+  {
+    "source": "Bank card",
+    "destination": "Food",
+    "amount": 100.5,
+    "date": "2018-06-20T00:00:00.000Z"
+  },
+  {
+    "source": "Bank card",
+    "destination": "Food",
+    "amount": 13,
+    "date": "2018-06-21T00:00:00.000Z"
+  },
+  {
+    "source": "Cash",
+    "destination": "Train",
+    "amount": 124,
+    "date": "2018-06-24T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,29 @@
+extend type Query {
+  budgets(dateStart: Date!, dateEnd: Date!): Budgets
+  budget(account: String!, dateStart: Date!, dateEnd: Date!): [Budget]
+}
+extend type Mutation {
+  upsertBudget(input: UpsertBudgetInput!): UpsertBudgetPayload
+}
+
+type Budgets {
+  accounts: [Account]
+}
+
+type Budget {
+  id: ID!
+  date: Date!
+  account: Account!
+  amount: Float
+}
+
+input UpsertBudgetInput {
+  account: String!
+  date: Date!
+  amount: Float!
+}
+
+type UpsertBudgetPayload {
+  success: Boolean
+  budget: Budget
+}

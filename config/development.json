@@ -1,0 +1,9 @@
+{
+  "credentials": {
+    "algorithm": "dev"
+  },
+  "token": {
+    "secret": "jwtsecret",
+    "expiresIn": 3000
+  }
+}
