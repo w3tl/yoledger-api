@@ -11,7 +11,7 @@ Object {
     "amount": 55,
     "date": 2018-05-10T00:00:00.000Z,
   },
-  "success": "2",
+  "success": true,
 }
 `;
 
